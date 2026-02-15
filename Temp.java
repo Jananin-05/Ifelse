@@ -1,0 +1,26 @@
+import java.util.*;
+import java.util.Scanner;
+
+class Temp{
+	public static void main(String[] args){
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the Temperature:");
+		int temp=scan.nextInt();
+
+		if(temp>60 && temp<70){
+			System.out.println("Extreme Heat");
+		}
+		else if(temp>50 && temp<60){
+			System.out.println("Very Hot");
+		}
+		else if(temp>40 && temp<50){
+			System.out.println("Hot");
+		}
+		else if(temp>30 && temp<40){
+			System.out.println("Warm");
+		}
+		else{
+			System.out.println("Cold");
+		}
+	}
+}

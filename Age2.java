@@ -1,0 +1,26 @@
+import java.util.*;
+import java.util.Scanner;
+
+class Age2{
+	public static void main(String[] args){
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter your Age:");
+		int age=scan.nextInt();
+
+		if(age>0 && age<=10){
+			System.out.println("Child");
+		}
+		else if(age>10 && age<=18){
+			System.out.println("Teenage");
+		}
+		else if(age>18 && age<=45){
+			System.out.println("Adult");
+		}
+		else if(age>45 && age<=100){
+			System.out.println("Old");
+		}
+		else{
+			System.out.println("Invalid Input");
+		}
+	}
+}
